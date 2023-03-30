@@ -100,10 +100,10 @@ if (document.cookie === '') {
 };
 
 btnAccept.addEventListener('click', () => {
-  setCookie('browser', getBrowser(), {'max-age': 15});
-  setCookie('os', getOS(), {'max-age': 15});
-  setCookie('screen-width', getScreenWidth(), {'max-age': 15});
-  setCookie('screen-height', getScreenHeight(), {'max-age': 15});
+  setCookie('browser', getBrowser(), {'max-age': 8});
+  setCookie('os', getOS(), {'max-age': 8});
+  setCookie('screen-width', getScreenWidth(), {'max-age': 8});
+  setCookie('screen-height', getScreenHeight(), {'max-age': 8});
   
   console.log(getCookie('browser'));
   console.log(getCookie('os'));
