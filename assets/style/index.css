@@ -1,0 +1,117 @@
+@import url('./reset.css');
+
+
+html {
+  font-family: 'Nunito', sans-serif;
+  }
+
+body {
+  background-image: url('../images/wallpaper.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+}
+
+:root {
+  --button-accept-bg-color: #2641f3;
+  --button-accept-color: #fff;
+  --button-save-preferences-bg-color: #2641f3;
+  --button-save-preferences-color: #fff;
+  --button-settings-border: 1px solid #2641f3;
+  --button-settings-color: #2641f3;
+  --button-settings-bg-hover: #2641f3;
+  --button-settings-color-hover: #fff;
+}
+
+input {
+  appearance: checkbox;
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.btn-accept {
+  background-color: var(--button-accept-bg-color);
+  color: var(--button-accept-color);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 16px;
+}
+
+.btn-save {
+  background-color: var(--button-save-preferences-bg-color);
+  color: var(--button-save-preferences-color);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 16px;
+}
+
+.btn-settings {
+  background-color: transparent;
+  border: var(--button-settings-border);
+  border-radius: 10px;
+  color: var(--button-settings-color);
+  font-size: 20px;
+  padding: 10px 16px;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-settings:hover {
+  background-color: var(--button-settings-bg-hover);
+  color: var(--button-settings-color-hover);
+}
+
+.cookies-adjustment {
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  height: 340px;
+  place-content: center;
+  width: 260px;
+}
+
+.cookies-setting {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  width: 200px;
+}
+
+.cookies-box {
+  background-color: #fff;
+  border-radius: 10px;
+  display: grid;
+  height: 340px;
+  padding: 24px;
+  place-content: center;
+  width: 260px;
+}
+
+.cookies {
+  height: 100vh;
+  width: 100vw;
+  background-color: #9c979780;
+  display: none;
+}
+
+.cookies-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cookies-content {
+  display: grid;
+  height: 180px;
+  margin: 10px 0px;
+  place-content: center;
+}
+
+
+
